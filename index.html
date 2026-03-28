@@ -1,0 +1,111 @@
+<html>
+
+<head>
+	<title>
+		Peddie OPR Viewer
+	</title>
+	<style>
+		body {
+			font-size: 18px;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+		}
+
+		.red {
+			color: red;
+		}
+
+		.blue {
+			color: blue;
+		}
+		
+		.scorebox{
+			font-size: 18px;
+		}
+
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			font-size: 18px;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+	</style>
+	<script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js"></script>
+</head>
+
+<body>
+	<label for="apikey">Blue Alliance API key:</label>
+	<input type="text" id="apikey" name="apikey" required size="10" /><br>
+
+	<label for="eventname">Event code (e.g. 2026njski):</label>
+	<input type="text" id="eventname" name="eventname" required size="10" /><br>
+
+	<button id="submiteventbutton" type="button">Submit</button>
+
+	<br>
+
+	<table id="table">
+		<thead>
+			<tr>
+				<th>Include?</th>
+				<th>#</th>
+				<th>R1</th>
+				<th>R2</th>
+				<th>R3</th>
+				<th>B1</th>
+				<th>B2</th>
+				<th>B3</th>
+				<th>B Score</th>
+				<th>R Score</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>Enter</td>
+				<td>an</td>
+				<td>API</td>
+				<td>key</td>
+				<td>and</td>
+				<td>event</td>
+				<td>code</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button id="calculatebutton" type="button">Calculate</button>
+
+	<table id="oprtable">
+		<thead>
+			<tr>
+				<th>Team</th>
+				<th>OPR</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Press</td>
+				<td>"Calculate"</td>
+			</tr>
+			<tr>
+				<td>to</td>
+				<td>find OPRs</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<i><br>Made by Jayden Li from Team 5895. Repository <a href="https://github.com/glolichen/frc-opr-viewer">here</a>.</i>
+</body>
+
+<script type="text/javascript" src="./index.js"></script>
+
+</html>
